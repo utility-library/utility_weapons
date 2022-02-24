@@ -1,0 +1,59 @@
+site_name: Utility Weapons
+site_url: https://example.com/
+
+theme:
+  name: material
+  logo: assets/images/Utility.png
+  favicon: assets/images/Utility.png
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+extra_css:
+  - ovveride/highlight.css
+  - ovveride/style.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
+  - https://code.jquery.com/jquery-3.6.0.min.js
+  - ovveride/highlight_.js
+
+nav:
+    - Home: 'index.md'
+    - 'Exports':
+      - "Weapon Experience":
+        - 'GetWeaponExperience': 'exports/GetWeaponExperience.md'
+        - 'SetWeaponExperience': 'exports/SetWeaponExperience.md'
+        - 'AddWeaponExperience': 'exports/AddWeaponExperience.md'
+        - 'RemoveWeaponExperience': 'exports/RemoveWeaponExperience.md'
+      - "Firemode":
+        - "GetWeaponFireMode" : 'exports/GetWeaponFireMode.md'
+        - "SetWeaponFireMode" : 'exports/SetWeaponFireMode.md'
+      - "Jamming System":
+        - "IsWeaponJammed" : 'exports/IsWeaponJammed.md'
+        - "SetWeaponJamState" : 'exports/SetWeaponJamState.md'
+      - "Other":
+        - "GetRecoilStep" : 'exports/GetRecoilStep.md'
+        - "IsHoldingBreath" : 'exports/IsHoldingBreath.md'
+
+markdown_extensions:
+  - abbr
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
