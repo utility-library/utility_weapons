@@ -1,0 +1,39 @@
+:root {
+    --md-accent-fg-color: #fd3c3c;
+    --md-primary-fg-color: #c61010;
+    
+    --md-default-fg-color: rgba(0, 0, 0, 0.6);
+    --md-default-fg-color--light: #252525;
+    --md-default-bg-color: #fff;
+    --md-admonition-icon--pied-piper: url("https://upload.wikimedia.org/wikipedia/commons/a/a2/Hello_%28yellow%29.png");
+}
+
+* {
+    --md-code-fg-color: #d5d7e2;
+    --md-code-bg-color: #21222ce5;
+}
+
+.md-clipboard::after {
+    background-color: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #252525;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #ee1717;
+border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #ee1717;
+}
