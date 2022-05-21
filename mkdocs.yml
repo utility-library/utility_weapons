@@ -42,6 +42,7 @@ nav:
       - "Other":
         - "GetRecoilStep" : 'exports/GetRecoilStep.md'
         - "IsHoldingBreath" : 'exports/IsHoldingBreath.md'
+        - "HaveGunpowderTraces" : 'exports/HaveGunpowderTraces.md'
 
 markdown_extensions:
   - abbr
